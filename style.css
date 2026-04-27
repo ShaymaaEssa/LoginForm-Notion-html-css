@@ -37,7 +37,7 @@
 
 }
 
-.sites-title {
+.side-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,18 +47,18 @@
     padding: 40px 0;
 }
 
-.sites-title .line{
-    width: 50%;
+.side-title .line{
+    width: 20%;
     height: 1px;
-    background-color: #a19e99;
-    flex: 1;
+    background-color: #bdb8af;
+    
 }
-.sites-title span{
+.side-title span{
     font-weight: 400;
     font-size: 17px;
     line-height: 26x;
     color:#a19e99;
-    flex: 0 0 auto;
+    
 }
 
 .sites-container{
@@ -79,9 +79,9 @@
     flex-direction: column;
     gap: 10px;
 
-    padding: 10px 20px;
+    padding: 15px 35px;
     border-radius: 6px;
-    border: 1px solid #a19e99;
+    border: 1px solid #ECEAE6;
 
     color: #fff;
     font-weight: 500;
@@ -89,4 +89,42 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
     cursor: pointer;
+
+    transition: all 0.3s ease;
 }
+
+.sites-button:hover{
+    background-color: #F3F2F0;
+    
+    
+}
+
+.sites-button span{
+    color:#2c2c2b;
+    font-weight:500;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+
+.login-form-container button{
+    background-color: rgb(21, 121, 221);
+    color:white;
+    width: 50%;
+    transition: all 0.3s ease;
+    border:none;
+    padding: 12px 0;
+    border-radius: 6px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.login-form-container button:hover{
+    background-color: #0c63bb;
+
+}
+
