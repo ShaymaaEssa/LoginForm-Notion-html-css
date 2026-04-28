@@ -15,7 +15,11 @@ a.no-style:hover{
     text-decoration: underline;
 }
 
-
+.max-width-400{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 .main-form{
     display: flex;
@@ -35,16 +39,17 @@ a.no-style:hover{
 
 .title h1, .title h2{
     font-weight: 600;
-    font-size: 22px;
     line-height: 26px;
     
 }
 
 .title h2{
+    font-size: 16px;
     color: #040404;
 }
 .title h1{
     color: #a19e99;
+    font-size: 22px;
 
 }
 
@@ -79,7 +84,7 @@ a.no-style:hover{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    width: 60%;
+    
     margin: auto;
 }
 
@@ -121,12 +126,7 @@ a.no-style:hover{
 
 }
 
-.login-form-container{
 
-
-    width: 60%;
-    margin: auto;
-}
 
 .login-form-container button{
     background-color: rgb(21, 121, 221);
@@ -141,6 +141,11 @@ a.no-style:hover{
     font-size: 14px;
     line-height: 14px;
     cursor: pointer;
+}
+
+.login-form-container button:disabled{
+    background-color: #bdb8af;
+    cursor: not-allowed;
 }
 
 .login-form-container button:hover{
@@ -179,11 +184,13 @@ a.no-style:hover{
     border: 1px solid #ECEAE6;
 }
 
-
-.small-texts{
-    width: 50%;
-    margin: auto;
+.login-form-container input:focus{
+    outline: none;
+    border-color: #0c63bb;
+    box-shadow: 0 0 0 2px rgba(12, 99, 187, 0.2);
 }
+
+
 
 .newuser-text{
     color:#7d7a75;
