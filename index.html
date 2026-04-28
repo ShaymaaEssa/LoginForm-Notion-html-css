@@ -1,30 +1,25 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Form</title>
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Form</title>
 
-  <body>
-    <section class="main-form">
-      <div class="container">
-        <div class="icon-svg">
-          <svg
-            aria-label="Notion"
-            role="graphics-symbol"
-            viewBox="0 0 20 20"
-            class="notion"
-            style="
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="main-form">
+    <div class="container">
+      <div class="icon-svg">
+        <svg aria-label="Notion" role="graphics-symbol" viewBox="0 0 20 20" class="notion" style="
               width: 32px;
               height: 32px;
               display: block;
@@ -32,204 +27,157 @@
               flex-shrink: 0;
               color: inherit;
               margin-bottom: 24px;
-            "
-          >
-            <path
-              fill="#fff"
-              d="M12.266.69c.576-.049 1.048-.07 1.486.029.462.105.819.328 1.204.607h.001l3.038 2.135.012.008.334.248c.114.09.224.186.312.288.248.286.33.599.33.937v11.714l-.005.167c-.019.397-.116.837-.433 1.197-.368.418-.9.579-1.461.619h-.009l-11.055.668h-.01c-.375.018-.758.008-1.12-.123a1.9 1.9 0 0 1-.72-.479l-.189-.216-.003-.006-2.239-2.905-.006-.008c-.396-.527-.648-1.02-.705-1.597l-.012-.254V3.307c0-.4.088-.861.388-1.246.316-.404.785-.622 1.332-.67h.01z"
-            ></path>
-            <path
-              fill="#000"
-              d="M12.32 1.437c1.17-.1 1.47-.032 2.205.501l3.039 2.136c.5.367.668.467.668.867v11.715c0 .734-.267 1.168-1.202 1.234l-11.055.667c-.702.034-1.036-.066-1.404-.533L2.333 15.12c-.4-.534-.567-.934-.567-1.401V3.306c0-.6.267-1.101 1.035-1.168zm4.241 3.871-10.854.634c-.4.034-.534.235-.534.668v9.945c0 .535.267.735.868.702l10.388-.601c.6-.033.668-.401.668-.835V5.942c0-.433-.167-.667-.536-.634m-1.134 1.836c.066.3 0 .601-.301.635l-.501.1v7.342c-.434.233-.835.367-1.169.367-.534 0-.668-.168-1.068-.668L9.113 9.78v4.973l1.036.233c0 .008-.005.6-.836.6l-2.303.135c-.067-.134 0-.468.233-.535l.602-.167V8.446L7.01 8.38c-.067-.3.1-.734.567-.768l2.472-.166 3.407 5.206V8.046l-.868-.1c-.067-.367.2-.635.534-.668zm-2.705-4.772-9.153.668c-.333.033-.4.2-.267.333l1.303 1.035c.534.433.735.4 1.737.333l9.452-.567c.2 0 .034-.2-.033-.233l-1.57-1.136c-.301-.233-.702-.5-1.47-.433"
-            ></path>
-          </svg>
+            ">
+          <path fill="#fff"
+            d="M12.266.69c.576-.049 1.048-.07 1.486.029.462.105.819.328 1.204.607h.001l3.038 2.135.012.008.334.248c.114.09.224.186.312.288.248.286.33.599.33.937v11.714l-.005.167c-.019.397-.116.837-.433 1.197-.368.418-.9.579-1.461.619h-.009l-11.055.668h-.01c-.375.018-.758.008-1.12-.123a1.9 1.9 0 0 1-.72-.479l-.189-.216-.003-.006-2.239-2.905-.006-.008c-.396-.527-.648-1.02-.705-1.597l-.012-.254V3.307c0-.4.088-.861.388-1.246.316-.404.785-.622 1.332-.67h.01z">
+          </path>
+          <path fill="#000"
+            d="M12.32 1.437c1.17-.1 1.47-.032 2.205.501l3.039 2.136c.5.367.668.467.668.867v11.715c0 .734-.267 1.168-1.202 1.234l-11.055.667c-.702.034-1.036-.066-1.404-.533L2.333 15.12c-.4-.534-.567-.934-.567-1.401V3.306c0-.6.267-1.101 1.035-1.168zm4.241 3.871-10.854.634c-.4.034-.534.235-.534.668v9.945c0 .535.267.735.868.702l10.388-.601c.6-.033.668-.401.668-.835V5.942c0-.433-.167-.667-.536-.634m-1.134 1.836c.066.3 0 .601-.301.635l-.501.1v7.342c-.434.233-.835.367-1.169.367-.534 0-.668-.168-1.068-.668L9.113 9.78v4.973l1.036.233c0 .008-.005.6-.836.6l-2.303.135c-.067-.134 0-.468.233-.535l.602-.167V8.446L7.01 8.38c-.067-.3.1-.734.567-.768l2.472-.166 3.407 5.206V8.046l-.868-.1c-.067-.367.2-.635.534-.668zm-2.705-4.772-9.153.668c-.333.033-.4.2-.267.333l1.303 1.035c.534.433.735.4 1.737.333l9.452-.567c.2 0 .034-.2-.033-.233l-1.57-1.136c-.301-.233-.702-.5-1.47-.433">
+          </path>
+        </svg>
+      </div>
+
+      <div class="title">
+        <h2>Your AI workspace.</h2>
+        <h1>Log in to your Notion account</h1>
+      </div>
+
+      <div class="login-sites">
+        <div class="side-title">
+          <div class="line"></div>
+          <span>Log in with</span>
+          <div class="line"></div>
         </div>
 
-        <div class="title">
-          <h2>Your AI workspace.</h2>
-          <h1>Log in to your Notion account</h1>
-        </div>
-
-        <div class="login-sites">
-          <div class="side-title">
-            <div class="line"></div>
-            <span>Log in with</span>
-            <div class="line"></div>
-          </div>
-
-          <div class="sites-container">
-            <div class="google-button sites-button">
-              <div class="google-icon">
-                <svg
-                  aria-hidden="true"
-                  role="graphics-symbol"
-                  viewBox="0.99 0.99 18.01 18.01"
-                  class="google"
-                  style="
+        <div class="sites-container">
+          <div class="google-button sites-button">
+            <div class="google-icon">
+              <svg aria-hidden="true" role="graphics-symbol" viewBox="0.99 0.99 18.01 18.01" class="google" style="
                     width: 22px;
                     height: 22px;
                     display: block;
                     fill: inherit;
                     flex-shrink: 0;
                     color: inherit;
-                  "
-                >
-                  <g clip-path="url(#clip0_16020_399)">
-                    <path
-                      fill="#4285F4"
-                      d="M18.64 10.205q-.002-.958-.164-1.841H10v3.481h4.844a4.14 4.14 0 0 1-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615"
-                    ></path>
-                    <path
-                      fill="#34A853"
-                      d="M10 19c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H1.957v2.332A9 9 0 0 0 10 19"
-                    ></path>
-                    <path
-                      fill="#FBBC04"
-                      d="M4.964 11.71A5.4 5.4 0 0 1 4.682 10c0-.593.102-1.17.282-1.71V5.958H1.957A9 9 0 0 0 1 10c0 1.452.348 2.827.957 4.042z"
-                    ></path>
-                    <path
-                      fill="#E94235"
-                      d="M10 4.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C14.463 1.891 12.426.999 10 .999a9 9 0 0 0-8.043 4.958L4.964 8.29C5.672 6.163 7.656 4.58 10 4.58"
-                    ></path>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_16020_399">
-                      <path fill="#fff" d="M1 1h18v18H1z"></path>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-              <span>Google</span>
+                  ">
+                <g clip-path="url(#clip0_16020_399)">
+                  <path fill="#4285F4"
+                    d="M18.64 10.205q-.002-.958-.164-1.841H10v3.481h4.844a4.14 4.14 0 0 1-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615">
+                  </path>
+                  <path fill="#34A853"
+                    d="M10 19c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H1.957v2.332A9 9 0 0 0 10 19">
+                  </path>
+                  <path fill="#FBBC04"
+                    d="M4.964 11.71A5.4 5.4 0 0 1 4.682 10c0-.593.102-1.17.282-1.71V5.958H1.957A9 9 0 0 0 1 10c0 1.452.348 2.827.957 4.042z">
+                  </path>
+                  <path fill="#E94235"
+                    d="M10 4.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C14.463 1.891 12.426.999 10 .999a9 9 0 0 0-8.043 4.958L4.964 8.29C5.672 6.163 7.656 4.58 10 4.58">
+                  </path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_16020_399">
+                    <path fill="#fff" d="M1 1h18v18H1z"></path>
+                  </clipPath>
+                </defs>
+              </svg>
             </div>
-
-            <div class="apple-button sites-button">
-              <div class="google-icon">
-                <svg
-                  xmlns="http://w3.org"
-                  aria-hidden="true"
-                  role="graphics-symbol"
-                  viewBox="2.67 0.99 14.65 18.01"
-                  width="22px"
-                  height="22px"
-                  fill="black"
-                >
-                  <path
-                    d="M13.294 5.348q.192 0 .592.045.41.036.927.2.52.164 1.055.528.537.363.992 1.018-.046.028-.346.246a5 5 0 0 0-.664.637 3.9 3.9 0 0 0-.655 1.046q-.272.627-.273 1.5 0 1.001.346 1.692.355.692.819 1.119.473.427.837.628.373.19.4.2-.01.036-.137.409-.127.364-.4.946a8.4 8.4 0 0 1-.691 1.2q-.39.555-.81 1.065-.409.51-.9.827a1.9 1.9 0 0 1-1.092.328 2.5 2.5 0 0 1-.79-.11 5 5 0 0 1-.628-.254 5 5 0 0 0-.646-.246 3 3 0 0 0-.883-.109q-.69 0-1.155.182-.454.192-.864.373a2.4 2.4 0 0 1-.964.182q-.846 0-1.491-.673a16 16 0 0 1-1.31-1.61q-.519-.745-.946-1.719a12 12 0 0 1-.682-2.065 9.6 9.6 0 0 1-.255-2.183q0-1.746.664-2.937.665-1.192 1.7-1.801 1.037-.61 2.156-.61.592 0 1.11.191.528.192.982.391.456.192.828.191.355 0 .837-.2.482-.21 1.064-.418a3.8 3.8 0 0 1 1.273-.21m-.636-1.474q-.455.555-1.146.919-.683.364-1.292.364-.128 0-.245-.028l-.028-.127a2 2 0 0 1-.009-.2q0-.691.3-1.346t.692-1.092q.482-.573 1.218-.955.747-.38 1.428-.409.028.154.028.355 0 .7-.264 1.364a4.3 4.3 0 0 1-.682 1.155"
-                  ></path>
-                </svg>
-              </div>
-              <span>Apple</span>
-            </div>
-
-            <div class="microsoft-button sites-button">
-              <div class="microsoft-icon">
-                <svg
-                  xmlns="http://w3.org"
-                  aria-hidden="true"
-                  role="graphics-symbol"
-                  viewBox="0 0 20 20"
-                  width="22"
-                  height="22"
-                  class="microsoft x1lliihq x2lah0s x17z2i9w x17rw0jw x1kihv7h x1heor9g"
-                >
-                  <g clip-path="url(#clip0_16020_721)">
-                    <path
-                      fill="#F25022"
-                      d="M9.524.952H.952v8.572h8.572z"
-                    ></path>
-                    <path
-                      fill="#00A4EF"
-                      d="M9.524 10.476H.952v8.572h8.572z"
-                    ></path>
-                    <path
-                      fill="#7FBA00"
-                      d="M19.048.952h-8.572v8.572h8.572z"
-                    ></path>
-                    <path
-                      fill="#FFB900"
-                      d="M19.048 10.476h-8.572v8.572h8.572z"
-                    ></path>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_16020_721">
-                      <path fill="#fff" d="M0 0h20v20H0z"></path>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-              <span>MicroSoft</span>
-            </div>
-
-            <div class="Passkey-button sites-button">
-              <div class="Passkey-icon">
-                <svg
-                  xmlns="http://w3.org"
-                  aria-hidden="true"
-                  role="graphics-symbol"
-                  viewBox="3.68 2.37 15.23 17.3"
-                  width="22px"
-                  height="22px"
-                  fill="black"
-                  class="personKeyFill x1lliihq x2lah0s x17z2i9w x17rw0jw x1kihv7h x1heor9g"
-                >
-                  <path
-                    d="M10 2.375c-1.137 0-2.054.47-2.674 1.242-.608.757-.9 1.765-.9 2.824s.292 2.066.9 2.824c.62.772 1.537 1.241 2.674 1.241s2.055-.469 2.675-1.241c.608-.758.9-1.766.9-2.824 0-1.059-.292-2.067-.9-2.824-.62-.773-1.538-1.242-2.675-1.242m0 9.255c-2.7 0-5.101 1.315-6.12 3.305-.361.706-.199 1.421.23 1.923.412.48 1.06.767 1.74.767h7.88v-1.79a3.96 3.96 0 0 1-1.439-3.876 8 8 0 0 0-2.291-.33m8.906 1.09a2.72 2.72 0 0 1-1.51 2.436v1.34l-.906 1.057.906 1.057-1.209 1.058-1.208-1.058v-3.454a2.719 2.719 0 1 1 3.927-2.436m-2.02-.604a.698.698 0 1 0-1.396 0 .698.698 0 0 0 1.395 0"
-                  ></path>
-                </svg>
-              </div>
-              <span>Passkey</span>
-            </div>
-
-            <div class="sso-button sites-button">
-              <div class="sso-icon">
-                <svg
-                  xmlns="http://w3.org"
-                  aria-hidden="true"
-                  role="graphics-symbol"
-                  viewBox="1.9 3.24 16.21 14.18"
-                  width="22"
-                  height="22"
-                  fill="#000000"
-                  class="teamspace x1lliihq x2lah0s x17z2i9w x17rw0jw x1kihv7h x1heor9g"
-                >
-                  <path
-                    d="M6.625 6.625a.675.675 0 1 1-1.35 0 .675.675 0 0 1 1.35 0M5.95 9.55a.675.675 0 1 0 0-1.35.675.675 0 0 0 0 1.35m.675 1.575a.675.675 0 1 1-1.35 0 .675.675 0 0 1 1.35 0M9.1 7.3a.675.675 0 1 0 0-1.35.675.675 0 0 0 0 1.35m.675 1.575a.675.675 0 1 1-1.35 0 .675.675 0 0 1 1.35 0M9.1 11.8a.675.675 0 1 0 0-1.35.675.675 0 0 0 0 1.35m.675 1.575a.675.675 0 1 1-1.35 0 .675.675 0 0 1 1.35 0M15.513 12.025a.675.675 0 1 1-1.35 0 .675.675 0 0 1 1.35 0m-.675 2.925a.675.675 0 1 0 0-1.35.675.675 0 0 0 0 1.35"
-                  ></path>
-                  <path
-                    d="M1.9 5.725A2.475 2.475 0 0 1 4.375 3.25h6.3a2.475 2.475 0 0 1 2.475 2.475v3.15h2.475A2.475 2.475 0 0 1 18.1 11.35v5.4a.675.675 0 0 1-.675.675H2.575a.675.675 0 0 1-.675-.675zM4.375 4.6c-.621 0-1.125.504-1.125 1.125v10.35h1.913V13.6c0-.31.251-.562.562-.562h3.6c.31 0 .563.251.563.562v2.475H11.8V5.725c0-.621-.504-1.125-1.125-1.125zm4.388 11.475v-1.912H6.288v1.912zm4.387-5.85v5.85h3.6V11.35c0-.621-.504-1.125-1.125-1.125z"
-                  ></path>
-                </svg>
-              </div>
-              <span>SSO</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="login-form">
-          <div class="side-title">
-            <div class="line"></div>
-            <span>or continue with</span>
-            <div class="line"></div>
+            <span>Google</span>
           </div>
 
-          <div class="login-form-container">
-            <form action="">
-              <label for="email">Email</label>
-              <input type="text" id="email-input" name="email" /><br /><br />
-              <label for="password">Password:</label>
-              <input type="password" id="password-input" name="password" /><br /><br />
-              <button type="submit" value="submit" >Continue</button>
-            </form>
+          <div class="apple-button sites-button">
+            <div class="google-icon">
+              <svg xmlns="http://w3.org" aria-hidden="true" role="graphics-symbol" viewBox="2.67 0.99 14.65 18.01"
+                width="22px" height="22px" fill="black">
+                <path
+                  d="M13.294 5.348q.192 0 .592.045.41.036.927.2.52.164 1.055.528.537.363.992 1.018-.046.028-.346.246a5 5 0 0 0-.664.637 3.9 3.9 0 0 0-.655 1.046q-.272.627-.273 1.5 0 1.001.346 1.692.355.692.819 1.119.473.427.837.628.373.19.4.2-.01.036-.137.409-.127.364-.4.946a8.4 8.4 0 0 1-.691 1.2q-.39.555-.81 1.065-.409.51-.9.827a1.9 1.9 0 0 1-1.092.328 2.5 2.5 0 0 1-.79-.11 5 5 0 0 1-.628-.254 5 5 0 0 0-.646-.246 3 3 0 0 0-.883-.109q-.69 0-1.155.182-.454.192-.864.373a2.4 2.4 0 0 1-.964.182q-.846 0-1.491-.673a16 16 0 0 1-1.31-1.61q-.519-.745-.946-1.719a12 12 0 0 1-.682-2.065 9.6 9.6 0 0 1-.255-2.183q0-1.746.664-2.937.665-1.192 1.7-1.801 1.037-.61 2.156-.61.592 0 1.11.191.528.192.982.391.456.192.828.191.355 0 .837-.2.482-.21 1.064-.418a3.8 3.8 0 0 1 1.273-.21m-.636-1.474q-.455.555-1.146.919-.683.364-1.292.364-.128 0-.245-.028l-.028-.127a2 2 0 0 1-.009-.2q0-.691.3-1.346t.692-1.092q.482-.573 1.218-.955.747-.38 1.428-.409.028.154.028.355 0 .7-.264 1.364a4.3 4.3 0 0 1-.682 1.155">
+                </path>
+              </svg>
+            </div>
+            <span>Apple</span>
           </div>
 
-          <div class="newuser-text">
-            <p>New user? <a href="#">Create an account</a></p>
+          <div class="microsoft-button sites-button">
+            <div class="microsoft-icon">
+              <svg xmlns="http://w3.org" aria-hidden="true" role="graphics-symbol" viewBox="0 0 20 20" width="22"
+                height="22" class="microsoft x1lliihq x2lah0s x17z2i9w x17rw0jw x1kihv7h x1heor9g">
+                <g clip-path="url(#clip0_16020_721)">
+                  <path fill="#F25022" d="M9.524.952H.952v8.572h8.572z"></path>
+                  <path fill="#00A4EF" d="M9.524 10.476H.952v8.572h8.572z"></path>
+                  <path fill="#7FBA00" d="M19.048.952h-8.572v8.572h8.572z"></path>
+                  <path fill="#FFB900" d="M19.048 10.476h-8.572v8.572h8.572z"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_16020_721">
+                    <path fill="#fff" d="M0 0h20v20H0z"></path>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span>MicroSoft</span>
           </div>
-          <div class="agreements-text">
-            <p>By continuing, you acknowledge that you understand and agree to the Terms & Conditions and Privacy Policy</p>
+
+          <div class="Passkey-button sites-button">
+            <div class="Passkey-icon">
+              <svg xmlns="http://w3.org" aria-hidden="true" role="graphics-symbol" viewBox="3.68 2.37 15.23 17.3"
+                width="22px" height="22px" fill="black"
+                class="personKeyFill x1lliihq x2lah0s x17z2i9w x17rw0jw x1kihv7h x1heor9g">
+                <path
+                  d="M10 2.375c-1.137 0-2.054.47-2.674 1.242-.608.757-.9 1.765-.9 2.824s.292 2.066.9 2.824c.62.772 1.537 1.241 2.674 1.241s2.055-.469 2.675-1.241c.608-.758.9-1.766.9-2.824 0-1.059-.292-2.067-.9-2.824-.62-.773-1.538-1.242-2.675-1.242m0 9.255c-2.7 0-5.101 1.315-6.12 3.305-.361.706-.199 1.421.23 1.923.412.48 1.06.767 1.74.767h7.88v-1.79a3.96 3.96 0 0 1-1.439-3.876 8 8 0 0 0-2.291-.33m8.906 1.09a2.72 2.72 0 0 1-1.51 2.436v1.34l-.906 1.057.906 1.057-1.209 1.058-1.208-1.058v-3.454a2.719 2.719 0 1 1 3.927-2.436m-2.02-.604a.698.698 0 1 0-1.396 0 .698.698 0 0 0 1.395 0">
+                </path>
+              </svg>
+            </div>
+            <span>Passkey</span>
+          </div>
+
+          <div class="sso-button sites-button">
+            <div class="sso-icon">
+              <svg xmlns="http://w3.org" aria-hidden="true" role="graphics-symbol" viewBox="1.9 3.24 16.21 14.18"
+                width="22" height="22" fill="#000000"
+                class="teamspace x1lliihq x2lah0s x17z2i9w x17rw0jw x1kihv7h x1heor9g">
+                <path
+                  d="M6.625 6.625a.675.675 0 1 1-1.35 0 .675.675 0 0 1 1.35 0M5.95 9.55a.675.675 0 1 0 0-1.35.675.675 0 0 0 0 1.35m.675 1.575a.675.675 0 1 1-1.35 0 .675.675 0 0 1 1.35 0M9.1 7.3a.675.675 0 1 0 0-1.35.675.675 0 0 0 0 1.35m.675 1.575a.675.675 0 1 1-1.35 0 .675.675 0 0 1 1.35 0M9.1 11.8a.675.675 0 1 0 0-1.35.675.675 0 0 0 0 1.35m.675 1.575a.675.675 0 1 1-1.35 0 .675.675 0 0 1 1.35 0M15.513 12.025a.675.675 0 1 1-1.35 0 .675.675 0 0 1 1.35 0m-.675 2.925a.675.675 0 1 0 0-1.35.675.675 0 0 0 0 1.35">
+                </path>
+                <path
+                  d="M1.9 5.725A2.475 2.475 0 0 1 4.375 3.25h6.3a2.475 2.475 0 0 1 2.475 2.475v3.15h2.475A2.475 2.475 0 0 1 18.1 11.35v5.4a.675.675 0 0 1-.675.675H2.575a.675.675 0 0 1-.675-.675zM4.375 4.6c-.621 0-1.125.504-1.125 1.125v10.35h1.913V13.6c0-.31.251-.562.562-.562h3.6c.31 0 .563.251.563.562v2.475H11.8V5.725c0-.621-.504-1.125-1.125-1.125zm4.388 11.475v-1.912H6.288v1.912zm4.387-5.85v5.85h3.6V11.35c0-.621-.504-1.125-1.125-1.125z">
+                </path>
+              </svg>
+            </div>
+            <span>SSO</span>
           </div>
         </div>
       </div>
-    </section>
-  </body>
+
+      <div class="login-form">
+        <div class="side-title">
+          <div class="line"></div>
+          <span>or continue with</span>
+          <div class="line"></div>
+        </div>
+
+        <div class="login-form-container">
+          <form action="" class="form-login-form">
+            <div>
+              <label for="email-input">Email</label>
+              <input type="text" id="email-input" name="email" placeholder="Enter your email..." />
+            </div>
+            <div>
+              <label for="password-input">Password:</label>
+              <input type="password" id="password-input" name="password" placeholder="Enter your password..." />
+            </div>
+            <button type="submit" value="submit">Continue</button>
+          </form>
+        </div>
+
+        <div class="small-texts">
+          <p class="newuser-text">New user? <a href="#" class="no-style">Create an account</a></p>
+          <p class="terms-text">By continuing, you acknowledge that you understand and agree to the Terms & Conditions
+            and Privacy Policy</p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>

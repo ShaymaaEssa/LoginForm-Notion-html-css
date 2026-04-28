@@ -6,12 +6,23 @@
     font-family: "Inter", sans-serif;;
 }
 
+a.no-style{
+    text-decoration: none;
+    color: #7d7a75;
+}
+
+a.no-style:hover{
+    text-decoration: underline;
+}
+
+
+
 .main-form{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-
+    min-height: 100vh;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -68,11 +79,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
 .sites-button{
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,6 +103,8 @@
     cursor: pointer;
 
     transition: all 0.3s ease;
+
+    
 }
 
 .sites-button:hover{
@@ -107,11 +121,17 @@
 
 }
 
+.login-form-container{
+
+
+    width: 60%;
+    margin: auto;
+}
 
 .login-form-container button{
     background-color: rgb(21, 121, 221);
     color:white;
-    width: 50%;
+    
     transition: all 0.3s ease;
     border:none;
     padding: 12px 0;
@@ -128,3 +148,56 @@
 
 }
 
+.form-login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    gap: 25px;
+    
+}
+
+.form-login-form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.login-form-container label{
+    color:#7d7a75;
+    font-weight: 500;
+    size: 12px;
+    line-height: 16px;
+    padding-bottom: 10px;
+}
+
+.login-form-container input{
+    padding: 10px 10px;
+    border-radius: 6px;
+    border: 1px solid #ECEAE6;
+}
+
+
+.small-texts{
+    width: 50%;
+    margin: auto;
+}
+
+.newuser-text{
+    color:#7d7a75;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 20px;
+}
+
+
+.terms-text{
+    color:#7d7a75;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding-top: 20px;
+}
