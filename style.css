@@ -79,17 +79,16 @@ a.no-style:hover{
 
 .sites-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
-    
-    margin: auto;
+    gap:20px;
+    margin: 0 auto;
+    justify-content: center;
+
 }
 
+
+
 .sites-button{
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,6 +107,9 @@ a.no-style:hover{
     cursor: pointer;
 
     transition: all 0.3s ease;
+
+    width: 100%;
+    max-width: 140px;
 
     
 }
