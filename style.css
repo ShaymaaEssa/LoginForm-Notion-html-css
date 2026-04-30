@@ -6,6 +6,10 @@
     font-family: "Inter", sans-serif;;
 }
 
+.hidden{
+    display: none !important;
+}
+
 a.no-style{
     text-decoration: none;
     color: #7d7a75;
@@ -212,6 +216,20 @@ a.no-style:hover{
     gap: 10px;
     justify-items: left;
 
+}
+
+.success-login{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background-color: rgb(120, 172, 120);
+    padding: 10px;
+}
+.success-login p{
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .newuser-text{

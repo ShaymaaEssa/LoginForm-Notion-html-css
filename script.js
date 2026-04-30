@@ -12,7 +12,7 @@ function formValidation(){
     let isValidFlag = true;
 
     var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-    if(emailInput.value.trim() === '' || passwordInput.value.trim() === ''){
+    if(emailInput.value.trim() === '' ){
         document.getElementById('email-error').hidden = false;
         isValidFlag = false;
     } 
@@ -29,9 +29,7 @@ function formValidation(){
         isValidFlag = false;
     }
 
-    if(isValidFlag){
-        alert('Login successful!');
-    }
+    
 
     return isValidFlag;
 
@@ -57,17 +55,36 @@ function toggleShowPassword(){
 }
 
 
+function hideSuccessMessage(){
+    document.getElementById('success-login').classList.add('hidden');
+}
+
+function handleInputChange(){
+    toggleSubmitButton();
+    formValidation();
+    hideSuccessMessage();
+}
 
 submitBtn.addEventListener('click', function(event){
-    if(!formValidation()){
+    let isFormValid = formValidation();
+    if(!isFormValid){
+        document.getElementById('success-login').classList.add('hidden');
+        event.preventDefault();
+    }
+
+    else{
+        emailInput.value = '';
+        passwordInput.value = '';
+        submitBtn.disabled = true;
+        document.getElementById('success-login').classList.remove('hidden');
         event.preventDefault();
     }
 });
 
 
-emailInput.addEventListener('input', toggleSubmitButton);
+emailInput.addEventListener('input', handleInputChange);
+passwordInput.addEventListener('input', handleInputChange);
 
-passwordInput.addEventListener('input', toggleSubmitButton);
 
 
 
