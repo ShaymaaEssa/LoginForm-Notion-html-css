@@ -150,7 +150,7 @@ a.no-style:hover{
     cursor: not-allowed;
 }
 
-.login-form-container button:hover{
+.login-form-container button:not(:disabled):hover{
     background-color: #0c63bb;
 
 }
@@ -172,10 +172,10 @@ a.no-style:hover{
     align-items: left;
 }
 
-.login-form-container label{
+.login-form-container label, .form-login-form  .showPassword-div{
     color:#7d7a75;
     font-weight: 500;
-    size: 12px;
+    font-size: 12px;
     line-height: 16px;
     padding-bottom: 10px;
 }
@@ -192,7 +192,21 @@ a.no-style:hover{
     box-shadow: 0 0 0 2px rgba(12, 99, 187, 0.2);
 }
 
+.error-msg{
+    color: red;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 5px;
+}
 
+.form-login-form  .showPassword-div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-items: left;
+
+}
 
 .newuser-text{
     color:#7d7a75;
