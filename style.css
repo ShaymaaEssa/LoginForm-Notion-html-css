@@ -129,6 +129,12 @@ a.no-style:hover{
 }
 
 
+.login-form-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
 
 .login-form-container button{
     background-color: rgb(21, 121, 221);
